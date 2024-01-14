@@ -23,15 +23,15 @@ import java.util.List;
 public class User implements UserDetails {
     @Id
     @GeneratedValue
-    String id;
+    private Long id;
     @Column(nullable = false)
-    String username;
-    String lastname;
-    String firstname;
-    String Country;
-    String password;
+    private String username;
+    private String lastname;
+    private String firstname;
+    private String Country;
+    private String password;
     @Enumerated(EnumType.STRING)
-    Role role;
+    private Role role;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
