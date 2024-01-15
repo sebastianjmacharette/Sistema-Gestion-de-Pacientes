@@ -12,5 +12,5 @@ import lombok.NoArgsConstructor;
 public class LoginRequest {
 
     String username;
-    String paswordd;
+    String password;
 }
